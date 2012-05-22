@@ -1,15 +1,27 @@
-# http://learnpythonthehardway.org/book/ex17.html
-# Extra Credit - How small can we get this script?
-from sys import argv
+# -----------------------------------------------------------------------
+# http://learnpythonthehardway.org/book/ex18.html
+# -----------------------------------------------------------------------
 
-script, from_file, to_file = argv
-input = open(from_file)
-indata = input.read()
+# this one is like your scripts with argv
+def print_two(*args):
+	arg1, arg2 = args
+	print "arg1: %r, arg2: %r" % (arg1, arg2)
 
-print "Ready to copy %s to %s. Hit RETURN to continue, CTRL-C to abort" % (from_file,  to_file)
-raw_input(">")
+# ok, that *args is actually pointless, we can just do this
+def print_two_again(arg1, arg2):
+	print"arg1: %r, arg2: %r" % (arg1, arg2)
 
-output = open(to_file, 'w')
-output.write(indata)
-output.close()
-input.close()
+# this just takes one argument
+def print_one(arg1):
+	print "arg1: %r" % arg1
+
+# this one takes no arguments
+def print_none():
+	print "I got nothing'."
+
+# printing out each function
+
+print_two("Zed", "Shaw")
+print_two_again("Zed", "Shaw")
+print_one("First!")
+print_none()
