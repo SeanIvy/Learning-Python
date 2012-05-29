@@ -1,0 +1,43 @@
+print 	- displays something to the screen
+.py		- file extension for python scripts
+$		- specifies your prompt, it may be c:\>, $, or something else
+^		- caret - this specifies the location of a python error in a report
+#		- octothorpe - comments a line, or part of a line out
++		- plus (mathematical symbol in python for "add")
+-		- minus (mathematical symbol in python for "subtract")
+/		- slash (mathematical symbol in python for "divide")
+*		- asterisk (mathematical symbol in python for "multiply")
+%		- percent (mathematical symbol in python for modulo - outputs the remainder of a division)
+<		- less-than (mathematical symbol in python for "less than")
+>		- greater-than (mathematical symbol in python for "greater than")
+<=		- less-than-equal (mathematical symbol in python for "less than, or equal")
+>=		- greater-than-equal (mathematical symbol in python for "greater than, or equal")
+variable- "a variable is nothing more than a name for something so you can use the name rather than the something as you code."
+#.#		- representation of Floating Point numbers, calculated as base 2 fractions
+_		- underscore, used to tie words together for readability where a space cannot be used.
+%s		- Modulo S - signifies a string, used within another string or variable
+%d		- Modulo D - signifies a decimal string and returns the string using str().
+%f		- Modulo F - signifies a floating point string
+%g		- Modulo G - signifies a floating point string rounded to 4 places.
+%r		- Modulo R - returns a string using repr() or returns the raw string if a name for that string is not found in module repr() or is not previously defined within the scripts functions.
+,		- used to tie strings together, (i.e. "\n", variable, "\n")
+"""		- triple double quote - can be used with a matching set of triple double quotes on the back side, to print large portions of text that would normally span several lines of code.
+\n		- new line
+\		- back-slash (or escape character) this allows the use of characters that would normally be used for code, for instance 'a string' could be written as  'a \'string\'' and would return "a 'string'"
+\t		- tab
+raw_input()		- our first function! this one request input from the user then returns it to the script as a string (this is important)
+from	- tells python you want to get something 'from' something else, like sys
+import	- 'load' a function for use in your script
+open()	- opens a file (specified within the parens) to access
+read()	- reads the contents of the file into the script
+close()	- closes the file in the script
+readline()		- reads only 1 particular line into the script.
+truncate()		- empties (aka deletes) the contents of a file.
+write()	- writes information to a file
+exists	- a function from within os.path that verifies the existence of an obj.
+len()	- function for getting file length (in bytes)
+^C		- used to cancel a script
+functions		- do 3 things, 1. they name pieces of code the way variables name strings and numbers, 2. they take arguments the way scripts take argv, 3. using 1, and 2, they let you make 'mini scripts' or tiny commands. Functions can use raw_data() to pass arguments to it. Functions *can* be used to pass information to other functions, this is called 'nesting' functions.
+def		- used to tell python you're defining a function, must be followed by a function name, and the line ended with a : the following lines contained within the function must be indented 4 spaces.
+rewind()		- used to navigate within a file
+return	- can only be used nested in a function. returns information from within the function to a variable, or to the function itself.
